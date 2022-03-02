@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="counter-container">
+      <h2 id="type">Press to start</h2>
+      <label class="watch"> 00 : 00 : 00</label>
+
+      <div class="buttons">
+        <button class="btn-counter" id="btn-start">
+          <span class="material-icons"> play_arrow </span>
+        </button>
+        <button class="btn-counter btn-hidden" id="btn-pause">
+          <span class="material-icons"> pause </span>
+        </button>
+        <button class="btn-counter btn-hidden" id="btn-stop">
+          <span class="material-icons"> stop </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="general-container">
+      <div class="statistics-container">
+        <h1>statistics</h1>
+        <div class="statistics">
+          <p>
+            <span class="spn-number" id="completed"> 0 </span>
+            pomodoros completed
+          </p>
+          <p>
+            <span class="spn-number" id="passed"> 0 </span>
+            passed time
+          </p>
+          <p>
+            <span class="spn-number" id="remaining"> 0 </span>
+            remaining time
+          </p>
+        </div>
+      </div>
+      <div class="options-container">
+        <h1>Options</h1>
+        <form class="options">
+          <div class="form-field">
+            <label for="Interval"> Interval duration (m)</label>
+            <input type="number" name="Interval" id="inpt-Interval" />
+          </div>
+          <div class="form-field">
+            <label for="break"> break duration (m) </label>
+            <input type="number" name="break" id="inpt-break" />
+          </div>
+          <div class="form-field">
+            <label for="total"> total time (h) </label>
+            <input type="number" name="total" id="inpt-total" />
+          </div>
+          <button class="btn-save">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
